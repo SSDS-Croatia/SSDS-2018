@@ -10,14 +10,14 @@ In the first day of the school you will learn about the tools and programming mo
 
 In addiotion to the software the students has to:
 
-	* Clone the [flink-training-exercise](https://github.com/dataArtisans/flink-training-exercises "Flink training exercise") from the GitHub
-	* Download the test data
+* Clone the [flink-training-exercise](https://github.com/dataArtisans/flink-training-exercises "Flink training exercise") from the GitHub
+* Download the test data
 	
-There is 3 possible ways how to obtain the required software:
+Students can choose 3 possible ways how to obtain the required software:
 
-	1. Using pre-installed VMs (Virtual Machines) remotely (recommended)
-	2. Download pre-installed VM and use it locally
-	3. Install software locally on your laptop
+1. Using pre-installed VMs (Virtual Machines) remotely (recommended)
+2. Download pre-installed VM and use it locally
+3. Install software locally on your laptop
 
 ## Using pre-installed Virtual Machine (remotely)
 
