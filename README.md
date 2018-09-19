@@ -1,4 +1,4 @@
-# SSDS 2018  - 2<sup>nd</sup> Int'l Summer School on Data Science
+# SSDS 2018  - 3<sup>nd</sup> Int'l Summer School on Data Science
 
 ## Center of Research Excellence for Data Science and Advanced Cooperative Systems, Research Unit for Data Science
 
