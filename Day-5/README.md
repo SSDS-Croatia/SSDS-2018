@@ -1,4 +1,4 @@
-### Day 5 - Learning from networked and relational data
+# Day 5 - Learning from networked and relational data
 
 On the fifth day of the school you will learn how to use Apache SPARK to perform some algorthms on Graphs. In order to follow the presentations and hands-on the following software is required:
 
@@ -11,25 +11,25 @@ On the fifth day of the school you will learn how to use Apache SPARK to perform
   
 ## Installation on Windows
   
-# JAVA install
+### JAVA install
 Make sure you have Java JDK 8 installed. To make things simpler later on Java JDK path should not contain space characters
 For example, good installation folder is c:\Java.
 	
-# Scala install
+### Scala install
 Download and install Scala from http://www.scala-lang.org/download/
 Use option: "Download the Scala binaries for windows "
 	
-# Apache Spark
+### Apache Spark
 Download Spark from https://spark.apache.org/downloads.html
 	
-# Additional steps
+### Additional steps
 Obtain hadoop WinUtils library.
 
 Set up environment variables
 	
 tmp\hive + edit script
 	
-# IntelliJ IDEA
+### IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
   
 ## Instalation of Ubuntu/Mint Linux
