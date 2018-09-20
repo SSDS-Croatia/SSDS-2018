@@ -34,22 +34,24 @@ Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/
   
 ## Instalation of Ubuntu/Mint Linux
 
-1. Make sure you have Java JDK 8 installed.
+### Java installation
+Make sure you have Java JDK 8 installed.
 	sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
+	sudo add-apt-repository ppa:webupd8team/java
+	sudo apt-get update
+	sudo apt-get install oracle-java8-installer
 	
-	2. Download and install Scala from http://www.scala-lang.org/download/
-	Use option: "Download the Scala binaries for windows "
+### Scala installation
+Download and install Scala from http://www.scala-lang.org/download/
+	wget www.scala-lang.org/files/archive/scala-2.11.8.deb
+	sudo dpkg -i scala-2.11.8.deb"
 	
-	3. Download Spark from https://spark.apache.org/downloads.html
+## Spark Installation
+Download Spark from https://spark.apache.org/downloads.html
 	
-	4. Obtain hadoop WinUtils library.
+### Additional steps
+Set up environment variables
 	
-	5. Set up environment variables
-	
-	6. Additional steps (tmp\hive + edit script)
-	
-	7. Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
+## IntelliJ IDEA
+Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
   
