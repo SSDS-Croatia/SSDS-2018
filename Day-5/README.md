@@ -36,6 +36,7 @@ Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/
 
 ### Java installation
 Make sure you have Java JDK 8 installed.
+	
 	sudo apt-get install python-software-properties
 	sudo add-apt-repository ppa:webupd8team/java
 	sudo apt-get update
@@ -43,6 +44,7 @@ Make sure you have Java JDK 8 installed.
 	
 ### Scala installation
 Download and install Scala from http://www.scala-lang.org/download/
+	
 	wget www.scala-lang.org/files/archive/scala-2.11.8.deb
 	sudo dpkg -i scala-2.11.8.deb"
 	
