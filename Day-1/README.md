@@ -8,7 +8,7 @@ In the first day of the school you will learn about the tools and programming mo
 	* an Java IDE (recommended IntelliJ from JetBeans)
 	* Scala 2.11
 
-In addiotion to the software the students has to:
+Training exercises and test data:
 
 * Clone the [flink-training-exercise](https://github.com/dataArtisans/flink-training-exercises "Flink training exercise") from the GitHub
 * Download the exercise [data](http://training.data-artisans.com/exercises/taxiData.html)
@@ -25,8 +25,9 @@ For this hands-on, 30 VMs from [EGI FedCloud training](https://www.egi.eu/servic
 
 The students will use the remote desktop connection to access the remote machines. For this, students have to download and install [x2go Client](https://wiki.x2go.org/doku.php) on their laptops. 
 
-This version is independent on the operating system on students' laptops. Supported platforms are: Win, Linux and Mac OS.
+The remote VMs already contain traninig exercises (in */home/ubuntu/flink-training-exercises*) and test data (*/home/ubuntu/trainingData*)
 
+This version is independent on the operating system on students' laptops. Supported platforms are: Win, Linux and Mac OS.
 
 ## Use pre-installed Virtual Machine (locally)
 
@@ -44,7 +45,7 @@ The default VM configuration is 1 CPU and 2 GB of memory, but you can re-configu
 
 This version is independent on the host operating system. Supported platforms are: Win, Linux and Mac OS.
 
-The VM already contains flink traninig exercise code (in */home/ubuntu/flink-training-exercises*) and exercise data (*/home/ubuntu/trainingData*)
+The VM already contains traninig exercises (in */home/ubuntu/flink-training-exercises*) and test data (*/home/ubuntu/trainingData*)
 
 
 ## Install on your laptop
