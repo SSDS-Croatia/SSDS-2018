@@ -6,7 +6,7 @@ On the fifth day of the school you will learn about the tools and programming mo
 	* Apache Spark 2.3.1
 	* Git
 	* Scala 2.11
-  * Scala IDE - IntelliJ
+  	* Scala IDE - IntelliJ
   
   ## Installation on Windows
   
