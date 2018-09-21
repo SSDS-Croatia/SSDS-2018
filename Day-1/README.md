@@ -8,14 +8,14 @@ In the first day of the school you will learn about the tools and programming mo
 	* an Java IDE (recommended IntelliJ from JetBeans)
 	* Scala 2.11
 
-Training exercises and test data:
+In addition to the software the students has to:
 
 * Clone the [flink-training-exercise](https://github.com/dataArtisans/flink-training-exercises "Flink training exercise") from the GitHub
 * Download the exercise [data](http://training.data-artisans.com/exercises/taxiData.html)
 
-More information on the format of the exercise data can be found [here](http://training.data-artisans.com/exercises/taxiData.html). On the hands-on session several training [exercises](http://training.data-artisans.com/exercises/taxiData.html) will be covered.
+More information on the format of the exercise data can be found [here](http://training.data-artisans.com/exercises/taxiData.html). On the hands-on session several training exercises ([1](http://training.data-artisans.com/exercises/rideCleansing.html), [2](http://training.data-artisans.com/exercises/rideEnrichment-flatmap.html), [3](http://training.data-artisans.com/exercises/hourlyTips.html)) will be covered.
 	
-Students can choose 3 possible ways how to obtain the required software:
+Students can choose 3 possible ways how to obtain the required software: 
 
 1. Use pre-installed VMs (Virtual Machines) remotely (recommended)
 2. Use pre-installed VM (locally)
@@ -25,11 +25,12 @@ Students can choose 3 possible ways how to obtain the required software:
 
 For this hands-on, 30 VMs from [EGI FedCloud training](https://www.egi.eu/services/training-infrastructure/) infrastructure, located at INFN-Catania (Italy) is prepared. The VMs already contain all the required software, exercise code and training data. On the day of the hands-on, you will get the VM IP addresses and the information how to connect.
 
-The students will use the remote desktop connection to access the remote machines. For this, students have to download and install [x2go Client](https://wiki.x2go.org/doku.php) on their laptops. A short introduction on x2go Cliente usage is available [here](https://wiki.x2go.org/doku.php/doc:usage:x2goclient).
+The students will use the remote desktop connection to access the remote machines. For this, students have to download and install [x2go Client](https://wiki.x2go.org/doku.php) on their laptops. 
 
-The remote VMs already contain traninig exercises (in */home/ubuntu/flink-training-exercises*) and test data (*/home/ubuntu/trainingData*)
+A short introduction on x2go Cliente usage is available [here](https://wiki.x2go.org/doku.php/doc:usage:x2goclient).
 
 This version is independent on the operating system on students' laptops. Supported platforms are: Win, Linux and Mac OS.
+
 
 ## Use pre-installed Virtual Machine (locally)
 
@@ -47,7 +48,7 @@ The default VM configuration is 1 CPU and 2 GB of memory, but you can re-configu
 
 This version is independent on the host operating system. Supported platforms are: Win, Linux and Mac OS.
 
-The VM already contains traninig exercises (in */home/ubuntu/flink-training-exercises*) and test data (*/home/ubuntu/trainingData*)
+The VM already contains flink traninig exercise code (in */home/ubuntu/flink-training-exercises*) and exercise data (*/home/ubuntu/trainingData*)
 
 
 ## Install on your laptop
