@@ -7,5 +7,5 @@ On the fifth day of the school you will learn how to use CLUS system to build su
 In order to follow the presentations and perform the exercises the following software is required:
 
 	* Java JDK 8
-	* Clus.jar (standalone tool provided in the Git folder SSDS-2018/Day-3 or at http://source.ijs.si/ktclus/clus-public)
+	* Clus.jar (standalone tool provided in this folder or at http://source.ijs.si/ktclus/clus-public)
 
