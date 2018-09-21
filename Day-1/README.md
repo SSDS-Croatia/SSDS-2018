@@ -12,6 +12,8 @@ Training exercises and test data:
 
 * Clone the [flink-training-exercise](https://github.com/dataArtisans/flink-training-exercises "Flink training exercise") from the GitHub
 * Download the exercise [data](http://training.data-artisans.com/exercises/taxiData.html)
+
+More information on the format of the exercise data can be found [here](http://training.data-artisans.com/exercises/taxiData.html). On the hands-on session several training [exercises](http://training.data-artisans.com/exercises/taxiData.html) will be covered.
 	
 Students can choose 3 possible ways how to obtain the required software:
 
@@ -23,7 +25,7 @@ Students can choose 3 possible ways how to obtain the required software:
 
 For this hands-on, 30 VMs from [EGI FedCloud training](https://www.egi.eu/services/training-infrastructure/) infrastructure, located at INFN-Catania (Italy) is prepared. The VMs already contain all the required software, exercise code and training data. On the day of the hands-on, you will get the VM IP addresses and the information how to connect.
 
-The students will use the remote desktop connection to access the remote machines. For this, students have to download and install [x2go Client](https://wiki.x2go.org/doku.php) on their laptops. 
+The students will use the remote desktop connection to access the remote machines. For this, students have to download and install [x2go Client](https://wiki.x2go.org/doku.php) on their laptops. A short introduction on x2go Cliente usage is available [here](https://wiki.x2go.org/doku.php/doc:usage:x2goclient).
 
 The remote VMs already contain traninig exercises (in */home/ubuntu/flink-training-exercises*) and test data (*/home/ubuntu/trainingData*)
 
