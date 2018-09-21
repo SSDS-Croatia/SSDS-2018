@@ -95,7 +95,7 @@ Run .bashrc to make the changes happen.
 
 	source ~/.bashrc
 	
-## IntelliJ IDEA
+### IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
 
 Do not forget to install Scala plugin!
@@ -105,4 +105,17 @@ When running InetelliJ IDEA for the first time, you will have to define Java SDK
 If Java SDK is not set in the "Project SDK" field, click button "New" and select the folder where you installed your Java SDK.
 
 Similar with Scala. If the Scala SDK is not set in the field "Use library", click button "Create" and select the folder where you installed Scala. On Ubuntu and Mint Linux, Scala home folder is usualy "/usr/share/scala".
-  
+
+
+## Required libraries
+With IntelliJ IDEA interface, right click on "src" folder within your project. Open "Module settings" and select "Libraries". To add new libraries to your project, click on button "+".
+
+For this froject, libraries will be added from a "Maven repository". Add the following libraries to your project:
+
+	org.apache.spark:spark-core_2.11:2.1.1
+	org.apache.spark:spark-sql_2.11:2.1.3
+	org.apache.spark:spark-graphx_2.11:2.1.3
+	ml.sparkling:sparkling-graph-api_2.11:0.0.7
+	ml.sparkling:sparkling-graph-examples_2.11:0.0.7
+	ml.sparkling:sparkling-graph-loaders_2.11:0.0.7
+	ml.sparkling:sparkling-graph-operators_2.11:0.0.7
