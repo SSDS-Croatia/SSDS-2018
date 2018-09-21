@@ -37,7 +37,7 @@ and remove the quotation marks as follows:
 
 	%RUNNER% -Xmx128m
 
-### Set up environment variables
+### Environment variables
 Open your system properties, go to advanced options and open the window to set environment variables.
 
 Set following wariables:
@@ -53,7 +53,7 @@ To test if your Apache Spark installation works correctly, run spark-shell scrip
 ### IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
 
-Do not forget to instal Scala plugin!
+Do not forget to install Scala plugin!
 
 When running InetelliJ IDEA for the first time, you will have to define Java SDK and Scala to use. When opening a new project, choose "Java" and then check box for "Scala".
 
@@ -78,11 +78,31 @@ Download and install Scala from http://www.scala-lang.org/download/
 	sudo dpkg -i scala-2.11.8.deb"
 	
 ## Spark Installation
-Download Spark from https://spark.apache.org/downloads.html
-	
-### Additional steps
-Set up environment variables
+Download Spark from https://spark.apache.org/downloads.html and uncompress it in the folder of your choice.
+
+To test if your Apache Spark installation works correctly, run spark-shell script from the folder SPARK_HOME your\Path\To\Spark\bin.
+
+### Environment variables
+Add the following lines to your .bashrc file.
+
+	export SPARK_HOME=/path/to/Spark
+	export SCALA_HOME=/path/to/Scala
+	export PATH=$SPARK_HOME/bin:$PATH
+
+On Ubuntu and Mint Linux, Scala home folder is usualy "/usr/share/scala".
+
+Run .bashrc to make the changes happen.
+
+	source ~/.bashrc
 	
 ## IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
+
+Do not forget to install Scala plugin!
+
+When running InetelliJ IDEA for the first time, you will have to define Java SDK and Scala to use. When opening a new project, choose "Java" and then check box for "Scala".
+
+If Java SDK is not set in the "Project SDK" field, click button "New" and select the folder where you installed your Java SDK.
+
+Similar with Scala. If the Scala SDK is not set in the field "Use library", click button "Create" and select the folder where you installed Scala. On Ubuntu and Mint Linux, Scala home folder is usualy "/usr/share/scala".
   
