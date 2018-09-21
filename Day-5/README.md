@@ -4,9 +4,8 @@ On the fifth day of the school you will learn how to use Apache SPARK to perform
 
 	* Java JDK 8 (older and newer versions of Java are not supported)
 	* Scala 2.11
-  	* Scala IDE - IntelliJ
 	* Apache Spark 2.3.1
-	* Git
+  	* Scala IDE - IntelliJ
   
   
 ## Installation on Windows
@@ -20,18 +19,48 @@ Download and install Scala from http://www.scala-lang.org/download/
 Use option: "Download the Scala binaries for windows "
 	
 ### Apache Spark
-Download Spark from https://spark.apache.org/downloads.html
-	
-### Additional steps
-Obtain hadoop WinUtils library.
+Download Spark from https://spark.apache.org/downloads.html and uncompress it in the folder of your choice.
 
-Set up environment variables
+Obtain hadoop WinUtils library from https://github.com/steveloughran/winutils. Download version for hadoop-2.7.1.
+
+Create (if it doesn't exist) the hive folder and give it proper permissions using WinUtils tool.
 	
-tmp\hive + edit script
-	
+	* Create the folder C:\tmp\hive\
+	• Open a terminal as administrator, go into the folder in which you copied winutils.
+	• Write winutils.exe chmod 777 \tmp\hive
+
+There is a bug in the windows script in Apache Spark version 2.1.1., which could also appear in other versions. To fix it, open the file bin\spark-class2.cmd with a text editor, search the statement :
+
+	"%RUNNER%" -Xmx128m …
+
+and remove the quotation marks as follows:
+
+	%RUNNER% -Xmx128m
+
+### Set up environment variables
+Open your system properties, go to advanced options and open the window to set environment variables.
+
+Set following wariables:
+
+	JAVA_OPTION -Xmx512M -Xms512M
+	HADOOP_HOME your\Path\To\Winutils
+	JAVA_HOME your\Path\To\JavaSDKRoot
+	SCALA_HOME your\Path\To\Scala\bin
+	SPARK_HOME your\Path\To\Spark\
+
+To test if your Apache Spark installation works correctly, run spark-shell script from the folder SPARK_HOME your\Path\To\Spark\bin.
+
 ### IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
-  
+
+Do not forget to instal Scala plugin!
+
+When running InetelliJ IDEA for the first time, you will have to define Java SDK and Scala to use. When opening a new project, choose "Java" and then check box for "Scala".
+
+If Java SDK is not set in the "Project SDK" field, click button "New" and select the folder where you installed your Java SDK.
+
+Similar with Scala. If the Scala SDK is not set in the field "Use library", click button "Create" and select the folder where you installed Scala.
+
 ## Instalation of Ubuntu/Mint Linux
 
 ### Java installation
