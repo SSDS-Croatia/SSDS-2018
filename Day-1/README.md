@@ -8,14 +8,14 @@ In the first day of the school you will learn about the tools and programming mo
 	* an Java IDE (recommended IntelliJ from JetBeans)
 	* Scala 2.11
 
-In addition to the software the students has to:
+In addition to the software the students have to:
 
-* Clone the [flink-training-exercise](https://github.com/dataArtisans/flink-training-exercises "Flink training exercise") from the GitHub
+* Clone the [flink-training-exercises](https://github.com/dataArtisans/flink-training-exercises "Flink training exercises") GitHub repository
 * Download the exercise [data](http://training.data-artisans.com/exercises/taxiData.html)
 
-More information on the format of the exercise data can be found [here](http://training.data-artisans.com/exercises/taxiData.html). On the hands-on session several training exercises ([1](http://training.data-artisans.com/exercises/rideCleansing.html), [2](http://training.data-artisans.com/exercises/rideEnrichment-flatmap.html), [3](http://training.data-artisans.com/exercises/hourlyTips.html)) will be covered.
+More information on the data format of the exercises can be found [here](http://training.data-artisans.com/exercises/taxiData.html). On the hands-on session several training exercises ([1](http://training.data-artisans.com/exercises/rideCleansing.html), [2](http://training.data-artisans.com/exercises/rideEnrichment-flatmap.html), [3](http://training.data-artisans.com/exercises/hourlyTips.html)) will be covered.
 	
-Students can choose 3 possible ways how to obtain the required software: 
+Students can choose among 3 possible ways to obtain the required software: 
 
 1. Use pre-installed VMs (Virtual Machines) remotely (recommended)
 2. Use pre-installed VM (locally)
@@ -23,7 +23,7 @@ Students can choose 3 possible ways how to obtain the required software:
 
 ## Use pre-installed Virtual Machines (remotely)
 
-For this hands-on, 30 VMs from [EGI FedCloud training](https://www.egi.eu/services/training-infrastructure/) infrastructure, located at INFN-Catania (Italy) is prepared. The VMs already contain all the required software, exercise code and training data. On the day of the hands-on, you will get the VM IP addresses and the information how to connect.
+For this hands-on, 30 VMs from [EGI FedCloud training](https://www.egi.eu/services/training-infrastructure/) infrastructure, located at INFN-Catania (Italy) have been prepared. The VMs already contain all the required software, exercise code, and training data. On the day of the hands-on, you will get the VM IP addresses and the information how to connect.
 
 The students will use the remote desktop connection to access the remote machines. For this, students have to download and install [x2go Client](https://wiki.x2go.org/doku.php) on their laptops. 
 
@@ -34,7 +34,7 @@ This version is independent on the operating system on students' laptops. Suppor
 
 ## Use pre-installed Virtual Machine (locally)
 
-The second option is to download pre-installed VM on your laptops and start it locally.
+The second option is to download a pre-installed VM on your laptops and start it locally.
 For this you will first need to
 
 1. [Download](http://mojoblak.srce.hr/public.php?service=files&t=15652ab336afc96bd1f26e06ad56725f) the pre-installed VM on your laptop. The size of VM is 5.6 GB and is split into 3 files. Download all files.
@@ -48,9 +48,9 @@ The default VM configuration is 1 CPU and 2 GB of memory, but you can re-configu
 
 This version is independent on the host operating system. Supported platforms are: Win, Linux and Mac OS.
 
-The VM already contains flink traninig exercise code (in */home/ubuntu/flink-training-exercises*) and exercise data (*/home/ubuntu/trainingData*)
+The VM already contains flink the training exercise code (in */home/ubuntu/flink-training-exercises*) and exercise data (*/home/ubuntu/trainingData*).
 
 
 ## Install on your laptop
 
-For those that want to install the required software and training data on their laptops and use it locally on their own, please, follow the instructions on how to [setup](http://training.data-artisans.com/devEnvSetup.html) the Flink development environment.
+For those who want to install the required software and training data on their laptops and use it locally on their own, please, follow the instructions on how to [setup](http://training.data-artisans.com/devEnvSetup.html) the Flink development environment.
