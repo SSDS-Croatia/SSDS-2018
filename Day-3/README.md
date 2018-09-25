@@ -24,6 +24,7 @@ https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jre.html
 To run the example do:
 
 a) execute the .bat file
+
 b) execute the following command in command window: 
 	java -jar Clus.jar Examplex_name/water-quality-name_OS.s
 
