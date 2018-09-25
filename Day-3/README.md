@@ -25,6 +25,12 @@ To run the example do:
 
 a) execute the .bat file
 
-b) execute the following command in command window: 
+b1/2/3) execute the following command in command window: 
 	java -jar Clus.jar Examplex_name/water-quality-name_OS.s
+b4)    execute the following command in command window: 
+	java -jar -forest Clus.jar Examplex_name/water-quality-name_OS.s
+b5)     execute the following command in command window: 
+	java -jar -ssl Clus.jar Examplex_name/water-quality-name_OS.s
+b6)      execute the following command in command window: 
+	java -jar -ssl -forest Clus.jar Examplex_name/water-quality-name_OS.s
 
