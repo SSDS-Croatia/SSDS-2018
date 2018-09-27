@@ -16,23 +16,17 @@ Make sure you have Java JDK 8 (or higher) installed. You can download it from ht
 ### Scala install
 The simplest way to use Scala within IntelliJ IDEA is to use library that comes with the IDE. IntelliJ IDEA also allows the instalation of Scala sdk directly from the IDE.
 
-The third way is to manually install and download Scala from http://www.scala-lang.org/download/. Default version of Scala for download is 2.12., and version 2.11. is needed for this hands-on session. You will need to scroll down to "Other releases" section and choose Scala 2.11.12. Once downloaded installation of Scala is straightforward.
+The third way is to manually install and download Scala from http://www.scala-lang.org/download/. Default version of Scala for download is __2.12.__, and version __2.11.__ is needed for this hands-on session. You will need to scroll down to "Other releases" section and choose Scala 2.11.12. Once downloaded installation of Scala is straightforward.
 	
 ### IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/.
 
-_IMPORTANT! Do not forget to install Scala plugin!_
-
-When running InetelliJ IDEA for the first time, you will have to define Java SDK and Scala to use. When opening a new project, choose "Java" and then check box for "Scala".
-
-If Java SDK is not set in the "Project SDK" field, click button "New" and select the folder where you installed your Java SDK.
-
-Similar with Scala. If the Scala SDK is not set in the field "Use library", click button "Create" and select the folder where you installed Scala.
+__IMPORTANT! Do not forget to install Scala plugin!__
 
 ## Instalation of Ubuntu/Mint Linux
 
 ### Java installation
-Make sure you have Java JDK 8 installed.
+Make sure you have Java JDK 8 installed. You can installit with the following set of shell instructions:
 	
 	sudo apt-get install python-software-properties
 	sudo add-apt-repository ppa:webupd8team/java
@@ -40,45 +34,34 @@ Make sure you have Java JDK 8 installed.
 	sudo apt-get install oracle-java8-installer
 	
 ### Scala installation
-Download and install Scala from http://www.scala-lang.org/download/
+You can install Scala either through InteliJ IDEA or manually. Scala installation for Linux can be downloaded from http://www.scala-lang.org/download/.
 	
 	wget www.scala-lang.org/files/archive/scala-2.11.8.deb
 	sudo dpkg -i scala-2.11.8.deb
 	
-## Spark Installation
-Download Spark from https://spark.apache.org/downloads.html and uncompress it in the folder of your choice.
+On Ubuntu and Mint Linux, Scala home folder should be __/usr/share/scala__.
 
-To test if your Apache Spark installation works correctly, run spark-shell script from the folder SPARK_HOME your\Path\To\Spark\bin.
-
-### Environment variables
-Add the following lines to your .bashrc file.
-
-	export SPARK_HOME=/path/to/Spark
-	export SCALA_HOME=/path/to/Scala
-	export PATH=$SPARK_HOME/bin:$PATH
-
-On Ubuntu and Mint Linux, Scala home folder is usualy "/usr/share/scala".
-
-Run .bashrc to make the changes happen.
-
-	source ~/.bashrc
-	
 ### IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/ 
 
-Do not forget to install Scala plugin!
+__IMPORTANT! Do not forget to install Scala plugin!__
 
-When running InetelliJ IDEA for the first time, you will have to define Java SDK and Scala to use. When opening a new project, choose "Java" and then check box for "Scala".
+After unpacking the installation file, IntelliJ IDEA is started by runing __idea.sh__ script located in the __./bin__ folder.
 
-If Java SDK is not set in the "Project SDK" field, click button "New" and select the folder where you installed your Java SDK.
+## Testing the installation
+1. Open IntelliJ IDEA IDE on your computer and create a new project. On the left side of the window choose __Java__ and then check the box for __Scala__. Depending on the installation, you might need to define Java and Scala SDKs you will use.
 
-Similar with Scala. If the Scala SDK is not set in the field "Use library", click button "Create" and select the folder where you installed Scala. On Ubuntu and Mint Linux, Scala home folder is usualy "/usr/share/scala".
+If Java SDK is not set in the __Project SDK__ field (top of the window), click button __New__ and select the folder where you installed your Java SDK.
 
+If the Scala SDK is not set in the field __Use library__ (Bottom part of the window), click button __Create__ which will open a new popup window. There you can choose Scala SDK installed with IntelliJ IDEA, download Scala from a repository or point to an existing Scala installation if you installed it manually.
 
-## Required libraries
-With IntelliJ IDEA interface, right click on "src" folder within your project. Open "Module settings" and select "Libraries". To add new libraries to your project, click on button "+".
+On Ubuntu and Mint Linux, Scala home folder should be __/usr/share/scala__.
 
-For this froject, libraries will be added from a "Maven repository". Add the following libraries to your project:
+2. After selecting Java and Scala SDKs, click __Next__, choose project name and location and click __Finish__.
+
+3. To be able to run the examples and solve problems for the hands-on session, you will need to import some libraries to your project. Within the IntelliJ IDEA interface, right click on __src__ folder within your project. Open __Open Module Settings__ and select __Libraries__. To add new libraries to your project, click on button __+__.
+
+For this froject, libraries will be added from the __Maven repository__. Add the following libraries to your project (you can copy-paste library names):
 
 	org.apache.spark:spark-core_2.11:2.1.1
 	org.apache.spark:spark-sql_2.11:2.1.3
