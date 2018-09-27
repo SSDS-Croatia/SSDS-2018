@@ -75,28 +75,29 @@ __IMPORTANT! When adding libraries, library names must not contain spaces at the
 
 4. After importing all required libraries, you are ready to create your installation. Create new Scala object by right-clicking on the __Project contents__ window and selecting __New->Scala class__. From the drop down list select __Object__, and name your Scala object __GraphAnalysis__. Copy the following code:
 
-	import org.apache.spark.graphx.{Edge, Graph, VertexId}
-	import org.apache.spark.rdd.RDD
-	import org.apache.spark.{SparkConf, SparkContext}
 
-	object GraphAnalysis
-	{
-	  def main(args: Array[String]): Unit =
-	  {
-	    val conf = new SparkConf().setAppName("GrapX example").setMaster("local[*]")
-	    val sc:SparkContext = new SparkContext(conf)
-	    implicit val sparkContext = sc
-	    val vertices: RDD[(VertexId, String)] =
-	      sc.parallelize(List( (1L, "Alice"), (2L, "Bob"),  (3L, "Charlie")))
-	    class Edge[ED]( val srcId: VertexId, val dstId: VertexId, val attr: ED)
-	    val edges =  sc.parallelize(List( Edge(1L, 2L, "coworker"),
-	      Edge(2L, 3L, "friend")))
+		import org.apache.spark.graphx.{Edge, Graph, VertexId}
+		import org.apache.spark.rdd.RDD
+		import org.apache.spark.{SparkConf, SparkContext}
 
-	    val graph = Graph(vertices, edges)
-	    graph.vertices.foreach(println)
-	    graph.edges.foreach(println)
-	  }
-	}
+		object GraphAnalysis
+		{
+		  def main(args: Array[String]): Unit =
+		  {
+		    val conf = new SparkConf().setAppName("GrapX example").setMaster("local[*]")
+		    val sc:SparkContext = new SparkContext(conf)
+		    implicit val sparkContext = sc
+		    val vertices: RDD[(VertexId, String)] =
+		      sc.parallelize(List( (1L, "Alice"), (2L, "Bob"),  (3L, "Charlie")))
+		    class Edge[ED]( val srcId: VertexId, val dstId: VertexId, val attr: ED)
+		    val edges =  sc.parallelize(List( Edge(1L, 2L, "coworker"),
+		      Edge(2L, 3L, "friend")))
+
+		    val graph = Graph(vertices, edges)
+		    graph.vertices.foreach(println)
+		    graph.edges.foreach(println)
+		  }
+		}
 
 To run the program, right-click the GraphAnalysis object in the __Project contents__ window and select __Run 'GraphAnalysis'__. Output should look something like:
 
