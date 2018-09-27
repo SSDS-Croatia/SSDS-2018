@@ -46,7 +46,7 @@ Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/
 
 __IMPORTANT! Do not forget to install Scala plugin!__
 
-After unpacking the installation file, IntelliJ IDEA is started by runing __idea.sh__ script located in the __./bin__ folder.
+After unpacking the installation file, IntelliJ IDEA is started by running __idea.sh__ script located in the __./bin__ folder.
 
 ## Testing the installation
 1. Open IntelliJ IDEA IDE on your computer and create a new project. On the left side of the window choose __Java__ and then check the box for __Scala__. Depending on the installation, you might need to define Java and Scala SDKs you will use.
