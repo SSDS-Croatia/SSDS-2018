@@ -75,7 +75,7 @@ Make sure you have Java JDK 8 installed.
 Download and install Scala from http://www.scala-lang.org/download/
 	
 	wget www.scala-lang.org/files/archive/scala-2.11.8.deb
-	sudo dpkg -i scala-2.11.8.deb"
+	sudo dpkg -i scala-2.11.8.deb
 	
 ## Spark Installation
 Download Spark from https://spark.apache.org/downloads.html and uncompress it in the folder of your choice.
