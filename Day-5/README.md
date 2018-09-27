@@ -17,7 +17,10 @@ Make sure you have Java JDK 8 (or higher) installed. You can download it from ht
 The simplest way to use Scala within IntelliJ IDEA is to use library that comes with the IDE. IntelliJ IDEA also allows the instalation of Scala sdk directly from the IDE.
 
 The third way is to manually install and download Scala from http://www.scala-lang.org/download/. Default version of Scala for download is __2.12.__, and version __2.11.__ is needed for this hands-on session. You will need to scroll down to "Other releases" section and choose Scala 2.11.12. Once downloaded installation of Scala is straightforward.
-	
+
+### Hadoop Winutils Library
+To run Spark code on Windows (even within IntelliJ IDEA) we need Hadoop Winutils library. Download and unpack __WinUtils.zip__ from this repository. Define a system environment variable __HADOOP_HOME__ with the path to unpacked WinUtils folder.
+
 ### IntelliJ IDEA
 Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/.
 
