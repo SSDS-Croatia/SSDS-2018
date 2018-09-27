@@ -10,10 +10,10 @@ Installation of Apache Spark itself is not required, because we will use Apache 
   
 ## Installation on Windows
   
-### JAVA install
+### JAVA Installation
 Make sure you have Java JDK 8 (or higher) installed. You can download it from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html.
 	
-### Scala install
+### Scala Installation
 The simplest way to use Scala within IntelliJ IDEA is to use library that comes with the IDE. IntelliJ IDEA also allows the instalation of Scala sdk directly from the IDE.
 
 The third way is to manually install and download Scala from http://www.scala-lang.org/download/. Default version of Scala for download is __2.12.__, and version __2.11.__ is needed for this hands-on session. You will need to scroll down to "Other releases" section and choose Scala 2.11.12. Once downloaded installation of Scala is straightforward.
@@ -23,7 +23,7 @@ Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/.
 
 __IMPORTANT! Do not forget to install Scala plugin!__
 
-## Instalation of Ubuntu/Mint Linux
+## Installation of Ubuntu/Mint Linux
 
 ### Java installation
 Make sure you have Java JDK 8 installed. You can installit with the following set of shell instructions:
@@ -73,7 +73,7 @@ After unpacking the installation file, IntelliJ IDEA is started by runing __idea
 
 __IMPORTANT! When adding libraries, library names must not contain spaces at the end.__
 
-4. After importing all required libraries, you are ready to create your installation. Create new Scala object by right-clicking on the __Project contents__ window and selecting __New->Scala class__. From the drop down list select __Object__, and name your Scala object __GraphAnalysis__. Copy the following code:
+4. After importing all required libraries, you are ready to create your installation. Create new Scala object by right-clicking on __src__ folder in the __Project contents__ window and selecting __New->Scala class__. From the drop down list select __Object__ and name your Scala object __GraphAnalysis__. Copy the following code:
 
 
 		import org.apache.spark.graphx.{Edge, Graph, VertexId}
@@ -99,7 +99,7 @@ __IMPORTANT! When adding libraries, library names must not contain spaces at the
 		  }
 		}
 
-	To run the program, right-click the GraphAnalysis object in the __Project contents__ window and select __Run 'GraphAnalysis'__. Output should look something like:
+	To run the code, right-click the __GraphAnalysis__ object in the __Project contents__ window and select __Run 'GraphAnalysis'__. Output should look something like:
 
 		[Stage 1:>                                                          (0 + 0) / 8](3,Charlie)
 		(1,Alice)
@@ -108,4 +108,4 @@ __IMPORTANT! When adding libraries, library names must not contain spaces at the
 		Edge(1,2,coworker)
 
 ## Dataset for the hands-on session
-
+Last is to import __dataset.xml__ file from this repository into your project. You can either download it directly into your IntelliJ IDEA project folder (it will be detected automatically), or create a new file throught the IDE and then copy the contents from this repository.
