@@ -1,5 +1,7 @@
 ### Summer school of data science - Day 2
 
+Slides of the lecture can be found here: http://www.l3s.de/~anand/anand-split-summer-school.pdf
+
 Preparation for the second hands-on session consists of setting up a python environment
 using Anaconda and installing all necessary libraries. The procedure for this is as follows:
 
