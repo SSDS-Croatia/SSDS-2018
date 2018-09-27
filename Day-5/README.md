@@ -51,25 +51,25 @@ After unpacking the installation file, IntelliJ IDEA is started by runing __idea
 ## Testing the installation
 1. Open IntelliJ IDEA IDE on your computer and create a new project. On the left side of the window choose __Java__ and then check the box for __Scala__. Depending on the installation, you might need to define Java and Scala SDKs you will use.
 
-If Java SDK is not set in the __Project SDK__ field (top of the window), click button __New__ and select the folder where you installed your Java SDK.
+	If Java SDK is not set in the __Project SDK__ field (top of the window), click button __New__ and select the folder where you installed your Java SDK.
 
-If the Scala SDK is not set in the field __Use library__ (Bottom part of the window), click button __Create__ which will open a new popup window. There you can choose Scala SDK installed with IntelliJ IDEA, download Scala from a repository or point to an existing Scala installation if you installed it manually.
+	If the Scala SDK is not set in the field __Use library__ (Bottom part of the window), click button __Create__ which will open a new popup window. There you can choose Scala SDK installed with IntelliJ IDEA, download Scala from a repository or point to an existing Scala installation if you installed it manually.
 
-On Ubuntu and Mint Linux, Scala home folder should be __/usr/share/scala__.
+	On Ubuntu and Mint Linux, Scala home folder should be __/usr/share/scala__.
 
 2. After selecting Java and Scala SDKs, click __Next__, choose project name and location and click __Finish__.
 
 3. To be able to run the examples and solve problems for the hands-on session, you will need to import some libraries to your project. Within the IntelliJ IDEA interface, right click on __src__ folder within your project. Open __Open Module Settings__ and select __Libraries__. To add new libraries to your project, click on button __+__.
 
-For this froject, libraries will be added from the __Maven repository__. Add the following libraries to your project (you can copy-paste library names):
+	For this froject, libraries will be added from the __Maven repository__. Add the following libraries to your project (you can copy-paste library names):
 
-	org.apache.spark:spark-core_2.11:2.1.1
-	org.apache.spark:spark-sql_2.11:2.1.3
-	org.apache.spark:spark-graphx_2.11:2.1.3
-	ml.sparkling:sparkling-graph-api_2.11:0.0.7
-	ml.sparkling:sparkling-graph-examples_2.11:0.0.7
-	ml.sparkling:sparkling-graph-loaders_2.11:0.0.7
-	ml.sparkling:sparkling-graph-operators_2.11:0.0.7
+		org.apache.spark:spark-core_2.11:2.1.1
+		org.apache.spark:spark-sql_2.11:2.1.3
+		org.apache.spark:spark-graphx_2.11:2.1.3
+		ml.sparkling:sparkling-graph-api_2.11:0.0.7
+		ml.sparkling:sparkling-graph-examples_2.11:0.0.7
+		ml.sparkling:sparkling-graph-loaders_2.11:0.0.7
+		ml.sparkling:sparkling-graph-operators_2.11:0.0.7
 
 __IMPORTANT! When adding libraries, library names must not contain spaces at the end.__
 
@@ -99,10 +99,13 @@ __IMPORTANT! When adding libraries, library names must not contain spaces at the
 		  }
 		}
 
-To run the program, right-click the GraphAnalysis object in the __Project contents__ window and select __Run 'GraphAnalysis'__. Output should look something like:
+	To run the program, right-click the GraphAnalysis object in the __Project contents__ window and select __Run 'GraphAnalysis'__. Output should look something like:
 
-	[Stage 1:>                                                          (0 + 0) / 8](3,Charlie)
-	(1,Alice)
-	(2,Bob)
-	Edge(2,3,friend)
-	Edge(1,2,coworker)
+		[Stage 1:>                                                          (0 + 0) / 8](3,Charlie)
+		(1,Alice)
+		(2,Bob)
+		Edge(2,3,friend)
+		Edge(1,2,coworker)
+
+## Dataset for the hands-on session
+
