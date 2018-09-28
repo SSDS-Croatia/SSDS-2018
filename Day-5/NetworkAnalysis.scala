@@ -18,7 +18,7 @@ object NetworkAnalysis
     implicit val sparkContext = sc
 
     // Load the graph from CSV
-    val filePath = "src/dataset.xml"
+    val filePath = "dataset.xml"
     val graph: Graph[String, String] = LoadGraph.from(GraphML(filePath)).load()
 
     // Print the initial graph
