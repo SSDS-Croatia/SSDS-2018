@@ -26,7 +26,7 @@ Download and install InetelliJ IDEA from https://www.jetbrains.com/idea/.
 
 __IMPORTANT! Do not forget to install Scala plugin!__
 
-## Installation of Ubuntu/Mint Linux
+## Installation on Ubuntu/Mint Linux
 
 ### Java installation
 Make sure you have Java JDK 8 installed. You can installit with the following set of shell instructions:
