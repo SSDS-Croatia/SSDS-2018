@@ -1,8 +1,8 @@
-pandas
+pandas==0.20.1
 nltk==3.2.3
 networkx==1.11
-numpy
-scikit-learn
-ggplot
-matplotlib
-tensorflow
+numpy==1.14.5
+scikit-learn==0.18.1
+ggplot==0.11.5
+matplotlib==2.0.2
+tensorflow==1.10.0
