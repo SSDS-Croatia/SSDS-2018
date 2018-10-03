@@ -17,7 +17,7 @@ Open up a terminal / command-prompt (in any folder) and enter the following comm
 
 - D:\Anaconda3\Scripts\conda.exe create -n SSDS_day2_env python=3.4 # creates a new virtual environment with the same python version as the development machine
 - D:\Anaconda3\Scripts\activate SSDS_day2_env # makes it active
-- D:\Anaconda3\Scripts\pip.exe install -r requirements-ssds3.txt # installs the necessary python libraries (you will find this file in the repo)
+- D:\Anaconda3\Scripts\pip.exe install -r requirements-ssds3.txt # installs the necessary python libraries (you will find this file in the repo, depending on the folder where you are in you might need to enter a full path to the file)
 - D:\Anaconda3\python -m ipykernel install --user --name SSDS_day2_env --display-name "Python (SSDS_day2)" # makes the environment visible to jupyter notebooks
 - D:\Anaconda3\python -m nltk.downloader punkt stopwords # tokenizer and stopwords resources for text processing
 
